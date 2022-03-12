@@ -63,7 +63,7 @@ int main()
     // Hide the blinking cursor:
     cout << "\033[?25l";
     // Move to the center (vertically):
-    for (int row = 0; row < (dimensions[1] / 2) - 3; row++) cout << "\n";
+    for (int row = 0; row < (dimensions[1] - 3) / 2; row++) cout << "\n";
 
     string lines[] = {
         centered(string(LINE_1), dimensions[0]),
